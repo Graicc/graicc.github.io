@@ -9,6 +9,14 @@ ul {
   margin-top: 0px;
 }
 
+li {
+  padding: 1px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
 header {
   margin-top: 0;
