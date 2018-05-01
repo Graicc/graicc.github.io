@@ -1,0 +1,28 @@
+body {
+    font-family: roboto;
+}
+
+ul {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.center {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.hlist {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.hlist li {
+    margin: auto;
+    padding: 5px 0;
+}
