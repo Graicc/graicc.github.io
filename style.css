@@ -26,3 +26,29 @@ a{
     margin: auto;
     padding: 5px 0;
 }
+
+@media screen and (max-width: 1050px) {
+    .content {
+      margin: 0 25px; 
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .hlist {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .hlist li {
+        text-align: center;
+        margin: 0 5px 0 auto;
+        font-size: .7em;
+    }
+    .hlist li * {
+        margin: 0;
+    }
+
+    .content {
+        margin: 0 10px;
+    }
+}
