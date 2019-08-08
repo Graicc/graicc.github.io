@@ -1,54 +1,83 @@
 body {
-    font-family: roboto;
+	font-family: 'IBM Plex Sans', serif;
+	max-width: 1000px;
+	margin: 0px auto;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'IBM Plex Serif', serif;
+	display: inherit;
 }
 
 ul {
-    list-style: none;
+	list-style: none;
 }
 
-a{
-    text-decoration: none;
-    color: inherit;
+a {
+	height: 100%;
+	text-decoration: none;
+	color: inherit;
+	font-weight: bold;
 }
 
-.center {
-    max-width: 1000px;
-    margin: 0 auto;
+#spacer {
+	flex-grow: 1;
 }
 
-.hlist {
-    display: flex;
-    justify-content: space-between;
-    padding: 0;
+#content {
+	margin: 0 0px;
+	padding: 5px 5px;
 }
 
-.hlist li {
-    margin: auto;
-    padding: 5px 0;
+/* Menu */
+header {
+	margin-top: 10px;
+	
+	display: flex;
+	flex-direction: row;
+	align-items: center;
 }
 
-@media screen and (max-width: 1050px) {
-    .content {
-      margin: 0 25px; 
-    }
+header img {
+	margin-left: 10px;
 }
 
-@media screen and (max-width: 500px) {
-    .hlist {
-        display: block;
-        width: 100%;
-        margin: 0 auto;
-    }
-    .hlist li {
-        text-align: center;
-        margin: 0 5px 0 auto;
-        font-size: .7em;
-    }
-    .hlist li * {
-        margin: 0;
-    }
+nav ul li {
+	display: inline;
+	margin: 10px;
+}
 
-    .content {
-        margin: 0 10px;
-    }
+
+/* Cards */
+.card-container {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0;
+	margin: 0;
+	justify-content: center;
+	
+}
+
+.card {
+	width: 300px;
+	margin: 10px;
+}
+
+.card img {
+	width: 100%;
+	border-radius: 10px;
+}
+
+.card h2, p {
+	margin: 5px 0;
+}
+
+
+/* Social */
+footer {
+	margin: 10px;
+}
+
+footer img {
+	width: 25px;
 }
