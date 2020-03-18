@@ -1,12 +1,18 @@
+html {
+  overflow-y: scroll;
+}
+
 body {
-	font-family: 'IBM Plex Sans', serif;
+	font-family: 'IBM Plex sans', serif;
+	font-size: 13pt;
 	max-width: 1000px;
 	margin: 0px auto;
 }
 
 h1,h2,h3,h4,h5,h6 {
-	font-family: 'IBM Plex Serif', serif;
+	font-family: 'IBM Plex Serif', sans-serif;
 	display: inherit;
+	margin: 20px 0 5px 0;
 }
 
 ul {
@@ -66,12 +72,29 @@ nav ul li {
 .card img {
 	width: 100%;
 	border-radius: 10px;
+	height: 153.5px;
+	object-fit: cover;
 }
 
 .card h2, p {
 	margin: 5px 0;
 }
 
+/* Button */
+.big-button {
+	background-color: #000000;
+	color: #ffffff;
+	font-size: 1.2em;
+	text-align: center;
+	padding: 10px;
+	border-radius: 5px;
+	font-style: italic;
+}
+
+.big-button a {
+	display: inline-block;
+	width: 100%;
+}
 
 /* Social */
 footer {

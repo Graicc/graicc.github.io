@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Reads Reddit | Graic</title>
+	<link rel="shortcut icon" href="/img/favicon.ico">
+	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Serif" rel="stylesheet">
+	<link rel="stylesheet" href="/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<header>
+		<a href="/index.html"><img src="/img/logo.svg" alt="Logo"></a>
+		<div id="spacer"></div>
+		<nav>
+			<ul>
+				<li><h3><a href="/about.html">About</a></h3></li>
+				<li><h3><a href="https://www.reddit.com/message/compose/?to=Graic628">Contact</a></h3></li>
+				<li><h3><a href="https://graic.itch.io/">Games</a></h3></li>
+			</ul>
+		</nav>
+	</header>
+	<hr>
+	<div id="content">
+		<h1>Reads Reddit</h1>
+		<p>Reads Reddit is a python script that generates and uploads a YouTube video from the most popular post on r/AskReddit of the day.</p>
+
+		<ul class="card-container">
+			<li class="card big-button"><a href="https://github.com/Graicc/Reads-Reddit" class="">Github</a></li>
+			<li class="card big-button"><a href="https://www.youtube.com/channel/UCD7JJt01KDzr27HUYzYHICg" class="">YouTube Channel</a></li>
+		</ul>
+
+
+		<h2>Structure</h2>
+		<p>The program consists of the following parts:</p>
+		<ol>
+			<li>Get the AskReddit post</li>
+			<li>Create slides for each of the comments</li>
+			<li>Render the audio for each comment</li>
+			<li>Stitch both parts together</li>
+			<li>Upload to YouTube</li>
+		</ol>
+
+		<h3>Getting the post</h3>
+		<p>To get access reddit requires praw, the Python Reddit API Wrapper. In order for Reddit to let you use its API, it requires an application to be created, and then the user to provide the details for the app. It then gets the top post, and goes through the top 20 comments. It creates a Text object for each of them, which consists of the author, body, and uid of the comment.</p>
+
+		<h3>Creating slides</h3>
+		<p>To create the images, the fork of the Python Image Library (PIL) Pillow is used. It uses Pillow to put the text on one of 10 random colored backgrounds. If the text is too large to fit on one page, multiple images are created.</p>
+
+		<h3>Rendering audio</h3>
+		<p>To create audio, the Google Text-to-speech library gTTS was used. This let the program talk to the google speech API, creating the necessary audio clips for each slide.</p>
+
+		<h3>Stitching it together</h3>
+		<p>FFmpeg was used in order to combine the audio and images together. This was done in the command line, as as far as I am aware, FFmpeg-python does not support concat files. Concat files were generated to tell the program to stitch the parts together.</p>
+
+		<h3>Uploading to YouTube</h3>
+		<p>For uploading to YouTube, youtube-upload was used. This is a command line application, where various parts of the video metadata can be submitted.</p>
+
+	</div>
+	<footer>
+		<a href="https://reddit.com/u/graic628"><img src="/img/social/reddit.svg" alt="Reddit"></a>
+		<a href="https://www.youtube.com/channel/UCXtMcK8ZuDjAoyRQ_nD_BWg"><img src="/img/social/youtube.svg" alt="YouTube"></a>
+		<a href="http://github.com/Graicc"><img src="/img/social/github.svg" alt="Github"></a>
+	</footer>
+</body>
+</html>
