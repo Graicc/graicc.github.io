@@ -53,6 +53,83 @@ nav ul li {
 	margin: 10px;
 }
 
+/* Anim */
+
+.anim {
+}
+
+a.logo {
+	height: 70px;
+	width: 70px;
+}
+
+.anim.logo {
+	height: 70px;
+	margin-bottom: -70px;
+}
+
+.anim.logo svg {
+	padding-left: 50%;
+	padding-right: auto;
+
+	height: 70px;
+}
+
+.anim.logo.l1 {
+	animation: animate-l1 .5s ease-in forwards;
+	stroke-dasharray: 40;
+	stroke-dashoffset: 40;
+}
+@keyframes animate-l1 {
+	0% {
+		stroke-dashoffset: 40;
+	}
+	100% {
+		stroke-dashoffset: 0;
+	}
+}
+
+.anim.logo.l3 {
+	animation: animate-c1 0.725s ease-out forwards;
+	stroke-dasharray: 62.8318530718;
+	stroke-dashoffset: 62.8318530718;
+}
+@keyframes animate-c1 {
+	31% {
+		stroke-dashoffset: 62.8318530718		;
+	}
+	100% {
+		stroke-dashoffset: 0;
+	}
+}
+
+.anim.logo.l4 {
+	animation: animate-c2 1s ease-out forwards;
+	stroke-dasharray: 62.8318530718;
+	stroke-dashoffset: 62.8318530718;
+}
+@keyframes animate-c2 {
+	50% {
+		stroke-dashoffset: 62.8318530718		;
+	}
+	100% {
+		stroke-dashoffset: 0;
+	}
+}
+
+.anim.logo.l2 {
+	animation: animate-l2 1s ease-out forwards;
+	stroke-dasharray: 40;
+	stroke-dashoffset: 40;
+}
+@keyframes animate-l2 {
+	72.5% {
+		stroke-dashoffset: 40;
+	}
+	100% {
+		stroke-dashoffset: 0;
+	}
+}
 
 /* Cards */
 .card-container {

@@ -1,7 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="isolation:isolate" viewBox="-1 -1 22 52" width="70" height="70">
-	<rect xmlns="http://www.w3.org/2000/svg" x="-16" y="-1" width="52" height="52" fill="rgb(255,255,255)"/>
-	<line x1="20" y1="0" x2="20" y2="40" vector-effect="scaling-stroke" stroke-width="1.5" stroke="rgb(0,0,0)" stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="3"/>
-	<circle vector-effect="scaling-stroke" cx="10" cy="10" r="10" fill="none" stroke-width="1.5" stroke="rgb(0,0,0)" stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="3"/>
-	<circle vector-effect="scaling-stroke" cx="10" cy="40" r="10" fill="none" stroke-width="1.5" stroke="rgb(0,0,0)" stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="3"/>
-	<line x1="17.0710678119" y1="17.0710678119" x2="2.92893218813" y2="32.9289321881" vector-effect="scaling-stroke" stroke-width="1.5" stroke="rgb(0,0,0)" stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="3"/>
+<svg viewBox="-1 -1 22 52" width="70" height="70">
+	<rect x="-16" y="-1" width="52" height="52" fill="rgb(255,255,255)"/>
+	<line x1="20" y1="0" x2="20" y2="40" stroke-width="1.5" stroke="rgb(0,0,0)" stroke-linecap="round"/>
+	<circle cx="10" cy="10" r="10" fill="none" stroke-width="1.5" stroke="rgb(0,0,0)"/>
+	<circle cx="10" cy="40" r="10" fill="none" stroke-width="1.5" stroke="rgb(0,0,0)"/>
+	<line x1="17.0710678119" y1="17.0710678119" x2="2.92893218813" y2="32.9289321881" stroke-width="1.5" stroke="rgb(0,0,0)" stroke-linecap="round"/>
 </svg>
